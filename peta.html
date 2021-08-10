@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Peta - Hikayat Jonggat</title>
+    <link rel="shortcut icon" href="assets/favicon.ico" type="image/x-icon">
+    <link rel="stylesheet" href="assets/style-peta.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+    <script src='https://kit.fontawesome.com/b247404256.js' crossorigin='anonymous'></script>
+</head>
+
+<body>
+    <header>
+        <div class="logo">
+            <a href="#beranda"><img src="assets/Logo KKN.png" alt="Logo KKN Hikayat Jonggat" width="48px"></a>
+        </div>
+        <nav id="navbar">
+            <ul class="navbar">
+                <li><a href="homepage.html">Beranda</a></li>
+                <li><a class="active-navbar" href="peta.html">Peta</a></li>
+                <li class="dropdown">
+                    <a href="#jelajah">Jelajah <i class="fas fa-angle-down" style="font-size:17px; font-weight:600;"></i></a>
+                    <ul class="dropdown-content">
+                        <li><a href="destinasi-wisata.html">Destinasi Wisata</a></li>
+                        <li><a href="penginapan-terdekat.html">Penginapan Terdekat</a></li>
+                        <li><a href="produk-lokal.html">Produk Lokal</a></li>
+                    </ul>
+                </li>
+                <li><a href="profil-kkn.html">Profil KKN</a></li>
+                <li><a href="kontak.html">Kontak</a></li>
+            </ul>
+        </nav>
+        <div class="menu-bar" id="menu-bar" onclick="barFunction()">
+            <div class="bar"></div>
+            <div class="bar"></div>
+            <div class="bar"></div>
+        </div>
+    </header>
+    <main class="content">
+        <div class="peta-lokasi">
+            <h1 style="color: #222;">Peta Lokasi</h1><br>
+            <div class="map-text-button">
+                <div class="row">
+                    <div class="column jonggat">
+                        <iframe id="map" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d63107.71080911402!2d116.1813631420097!3d-8.669480455236595!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x2dcdba107a889633%3A0x4030bfbcaf7d160!2sJonggat%2C%20Kabupaten%20Lombok%20Tengah%2C%20Nusa%20Tenggara%20Bar.!5e0!3m2!1sid!2sid!4v1626672853840!5m2!1sid!2sid"
+                            style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+                    </div>
+                    <div class="column bonjeruk">
+                        <iframe id="map" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d31555.896953930092!2d116.203208868023!3d-8.645134152404667!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x2dcdb9e5b9878d8d%3A0x6c4f52a514fa16ef!2sBonjeruk%2C%20Jonggat%2C%20Kabupaten%20Lombok%20Tengah%2C%20Nusa%20Tenggara%20Bar.!5e0!3m2!1sid!2sid!4v1626672381056!5m2!1sid!2sid"
+                            style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+                    </div>
+                    <div class="column sukarara">
+                        <iframe id="map" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d31551.441617311415!2d116.19792226805448!3d-8.698178600040281!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x2dcdba6261144e5f%3A0x5030bfbcaf7d830!2sSukarara%2C%20Jonggat%2C%20Kabupaten%20Lombok%20Tengah%2C%20Nusa%20Tenggara%20Bar.!5e0!3m2!1sid!2sid!4v1626672709969!5m2!1sid!2sid"
+                            style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+                    </div>
+                </div>
+                <div class="text-button">
+                    <div class="text">Pilih lokasi <br>yang ingin Anda ketahui</div>
+                    <div id="three-button">
+                        <a class="btn active" onclick="filterSelection('jonggat')">Kecamatan Jonggat</a>
+                        <a class="btn" onclick="filterSelection('bonjeruk')">Desa Bonjeruk</a>
+                        <a class="btn" onclick="filterSelection('sukarara')">Desa Sukarara</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="peta-infografis">
+
+        </div>
+    </main>
+    <footer class="footer">
+        <div class="bottom-nav-and-logo">
+            <div class="bottom-nav">
+                <div class="bottom-nav-member">
+                    <div class="member">Peta</div>
+                    <div class="submember"><a href="peta.html">Peta Lokasi</a></div>
+                    <div class="submember"><a href="peta.html">Peta Infografis</a></div>
+                </div>
+                <div class="bottom-nav-member">
+                    <div class="member">Jelajah</div>
+                    <div class="submember"><a href="destinasi-wisata.html">Destinasi Wisata</a></div>
+                    <div class="submember"><a href="penginapan-terdekat.html">Penginapan</a></div>
+                    <div class="submember"><a href="produk-lokal.html">Produk Lokal</a></div>
+                </div>
+                <div class="bottom-nav-member">
+                    <div class="member">Profil KKN</div>
+                    <div class="submember"><a href="profil-kkn.html">Filosofi Logo</a></div>
+                    <div class="submember"><a href="profil-kkn.html">Anggota Tim</a></div>
+                    <div class="submember"><a href="profil-kkn.html">Program Kerja</a></div>
+                </div>
+                <div class="bottom-nav-member">
+                    <div class="member">Kontak Kami</div>
+                    <div class="submember"><a href="kontak.html">Admin Bonjeruk</a></div>
+                    <div class="submember"><a href="kontak.html">Admin Sukarara</a></div>
+                    <div class="submember"><a href="kontak.html">Admin KKN Hikayat Jonggat</a></div>
+                </div>
+            </div>
+            <div class="text-logo">
+                <div class="simple-text">Didukung dan Diselenggarakan Oleh</div>
+                <div class="list-logo">
+                    <a href="https://www.ugm.ac.id/" target="_blank"><img src="assets/Logo UGM.png" alt="Logo UGM" height="90px"></a>
+                    <a href="https://kkn.ugm.ac.id/" target="_blank"><img src="assets/Logo KKN PPM.png" alt="Logo KKN PPPM" height="90px"></a>
+                    <a href="https://lomboktengahkab.go.id/" target="_blank"><img src="assets/Logo Lombok Tengah.png" alt="Logo Lombok Tengah" height="90px"></a>
+                    <a href="#"><img src="assets/Logo KKN.png" alt="Logo KKN" height="90px"></a>
+                </div>
+            </div>
+        </div>
+        <div class="copyright">&#169 Tim KKN-PPM UGM Kecamatan Jonggat 2021</div>
+    </footer>
+    <script>
+        function barFunction() {
+            document.getElementById("menu-bar").classList.toggle("change");
+            document.getElementById("navbar").classList.toggle("show-navbar");
+        }
+
+        filterSelection("jonggat")
+
+        function filterSelection(c) {
+            var x, i;
+            x = document.getElementsByClassName("column");
+            if (c == "all") c = "";
+            for (i = 0; i < x.length; i++) {
+                removeClass(x[i], "show");
+                if (x[i].className.indexOf(c) > -1) addClass(x[i], "show");
+            }
+        }
+
+        function addClass(element, name) {
+            var i, arr1, arr2;
+            arr1 = element.className.split(" ");
+            arr2 = name.split(" ");
+            for (i = 0; i < arr2.length; i++) {
+                if (arr1.indexOf(arr2[i]) == -1) {
+                    element.className += " " + arr2[i];
+                }
+            }
+        }
+
+        function removeClass(element, name) {
+            var i, arr1, arr2;
+            arr1 = element.className.split(" ");
+            arr2 = name.split(" ");
+            for (i = 0; i < arr2.length; i++) {
+                while (arr1.indexOf(arr2[i]) > -1) {
+                    arr1.splice(arr1.indexOf(arr2[i]), 1);
+                }
+            }
+            element.className = arr1.join(" ");
+        }
+
+        var btn_container = document.getElementById("three-button");
+        var btns = btn_container.getElementsByClassName("btn");
+        for (var i = 0; i < btns.length; i++) {
+            btns[i].addEventListener("click", function() {
+                var current = document.getElementsByClassName("active");
+                current[0].className = current[0].className.replace(" active", "");
+                this.className += " active";
+            });
+        }
+    </script>
+</body>
+
+</html>

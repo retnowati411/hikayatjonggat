@@ -1,0 +1,534 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Penginapan Terdekat - Hikayat Jonggat</title>
+    <link rel="shortcut icon" href="assets/favicon.ico" type="image/x-icon">
+    <link rel="stylesheet" href="assets/style-penginapan-terdekat.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+    <script src='https://kit.fontawesome.com/b247404256.js' crossorigin='anonymous'></script>
+</head>
+
+<body>
+    <header>
+        <div class="logo">
+            <a href="#beranda"><img src="assets/Logo KKN.png" alt="Logo KKN Hikayat Jonggat" width="48px"></a>
+        </div>
+        <nav id="navbar">
+            <ul class="navbar">
+                <li><a href="homepage.html">Beranda</a></li>
+                <li><a href="peta.html">Peta</a></li>
+                <li class="dropdown">
+                    <a href="#jelajah">Jelajah <i class="fas fa-angle-down" style="font-size:17px; font-weight:600;"></i></a>
+                    <ul class="dropdown-content">
+                        <li><a href="destinasi-wisata.html">Destinasi Wisata</a></li>
+                        <li><a href="penginapan-terdekat.html" class="active-navbar">Penginapan Terdekat</a></li>
+                        <li><a href="produk-lokal.html">Produk Lokal</a></li>
+                    </ul>
+                </li>
+                <li><a href="profil-kkn.html">Profil KKN</a></li>
+                <li><a href="kontak.html">Kontak</a></li>
+            </ul>
+        </nav>
+        <div class="menu-bar" id="menu-bar" onclick="barFunction()">
+            <div class="bar"></div>
+            <div class="bar"></div>
+            <div class="bar"></div>
+        </div>
+    </header>
+    <main class="content">
+        <h1>Penginapan Terdekat</h1>
+        <div class="row">
+            <div class="column">
+                <div class="kategori">Hotel</div>
+                <div class="judul-alamat-nohp">
+                    <h3>ILLIRA LITE HOTEL PRAYA LOMBOK</h3>
+                    <p class="alamat">Jalan Raya No.88, Penujak, Praya Bar., Kabupaten Lombok Tengah, Nusa Tenggara Bar. 83572</p>
+                    <p>(0370) 6158555</p>
+                </div>
+                <div class="underline"></div>
+                <div class="fasilitas">
+                    <p><b>Fasilitas Populer</b></p>
+                    <div><i class="fas fa-wifi fa-fw"></i>WIFI Gratis</div>
+                    <div><i class="fas fa-swimmer fa-fw"></i>Kolam Renang</div>
+                    <div><i class="fas fa-coffee fa-fw"></i>Makan Pagi</div>
+                    <div><i class="fas fa-parking fa-fw"></i>Tempat Parkir</div>
+                    <div><i class="far fa-snowflake fa-fw"></i>AC</div>
+                </div>
+                <div class="underline"></div>
+                <div class="list-btn">
+                    <form action="https://www.illirahotel.com/praya/" target="_blank">
+                        <button class="button"><i class="fas fa-globe-americas fa-fw"></i> Website</button>
+                    </form>
+                    <form action="https://goo.gl/maps/4DLmVBAuvpQjmgvD7" target="_blank">
+                        <button class="button"><i class="fas fa-map-marker-alt fa-fw"></i> Lokasi di Google Maps</button>
+                    </form>
+                </div>
+            </div>
+            <div class="column">
+                <div class="kategori">Homestay</div>
+                <div class="judul-alamat-nohp">
+                    <h3>TOMMY HOMESTAY</h3>
+                    <p class="alamat">Setanggor Timur, Setanggor, Praya Bar., Kabupaten Lombok Tengah, Nusa Tenggara Bar. 83572</p>
+                    <p>0823-3992-2025</p>
+                </div>
+                <div class="underline"></div>
+                <div class="fasilitas">
+                    <p><b>Fasilitas Populer</b></p>
+                    <div><i class="fas fa-wifi fa-fw"></i>WIFI Gratis</div>
+                </div>
+                <div class="underline"></div>
+                <div class="list-btn">
+                    <form action="https://g.page/tommy-homestay?share" target="_blank">
+                        <button class="button"><i class="fas fa-map-marker-alt fa-fw"></i> Lokasi di Google Maps</button>
+                    </form>
+                </div>
+            </div>
+            <div class="column">
+                <div class="kategori">Hotel</div>
+                <div class="judul-alamat-nohp">
+                    <h3>E.DOTEL HOTEL</h3>
+                    <p class="alamat">Jl. Pejanggik No.08, Jontlak, Praya, Kabupaten Lombok Tengah, Nusa Tenggara Bar. 83511</p>
+                    <p>0877-5484-3496</p>
+                </div>
+                <div class="underline"></div>
+                <div class="fasilitas">
+                    <p><b>Fasilitas Populer</b></p>
+                    <div><i class="fas fa-wifi fa-fw"></i>WIFI Gratis</div>
+                    <div><i class="fas fa-parking fa-fw"></i>Tempat Parkir</div>
+                    <div><i class="far fa-snowflake fa-fw"></i>AC</div>
+                    <div><i class="fas fa-baby-carriage fa-fw"></i>Ramah Anak</div>
+                </div>
+                <div class="underline"></div>
+                <div class="list-btn">
+                    <form action="https://goo.gl/maps/Nf1Ao24obr7k5g3QA" target="_blank">
+                        <button class="button"><i class="fas fa-map-marker-alt fa-fw"></i> Lokasi di Google Maps</button>
+                    </form>
+                </div>
+            </div>
+            <div class="column">
+                <div class="kategori">Homestay</div>
+                <div class="judul-alamat-nohp">
+                    <h3>PEDEK HOMESTAY</h3>
+                    <p class="alamat">Unnamed Road, Setanggor, Praya Bar., Kabupaten Lombok Tengah, Nusa Tenggara Bar. 83572</p>
+                    <p>0819-0723-6776</p>
+                </div>
+                <div class="underline"></div>
+                <div class="fasilitas">
+                    <p><b>Fasilitas Populer</b></p>
+                    <div><i class="fas fa-wifi fa-fw"></i>WIFI Gratis</div>
+                    <div><i class="fas fa-coffee fa-fw"></i>Makan Pagi</div>
+                    <div><i class="far fa-snowflake fa-fw"></i>AC</div>
+                    <div><i class="fas fa-shuttle-van fa-fw"></i>Airport shuttle</div>
+                    <div><i class="fas fa-paw fa-fw"></i>Hewan Peliharaan Diperbolehkan</div>
+                    <!--<div><i class="fas fa-washer fa-fw"></i>Full-Service Laundry</div>-->
+                </div>
+                <div class="underline"></div>
+                <div class="list-btn">
+                    <form action="https://goo.gl/maps/vWp9bcg4JMRWzwdJ9" target="_blank">
+                        <button class="button"><i class="fas fa-map-marker-alt fa-fw"></i> Lokasi di Google Maps</button>
+                    </form>
+                </div>
+            </div>
+            <div class="column">
+                <div class="kategori">Hotel</div>
+                <div class="judul-alamat-nohp">
+                    <h3>OYO 1732 EDOTEL PRAYA SYARIAH</h3>
+                    <p class="alamat">Jl. Pejanggik No.8, Semayan, Praya, Kabupaten Lombok Tengah, Nusa Tenggara Bar. 83518</p>
+                    <p>(021) 29707601</p>
+                </div>
+                <div class="underline"></div>
+                <div class="fasilitas">
+                    <p><b>Fasilitas Populer</b></p>
+                    <div><i class="fas fa-wifi fa-fw"></i>WIFI Gratis</div>
+                    <div><i class="far fa-snowflake fa-fw"></i>AC</div>
+                    <div><i class="fas fa-baby-carriage fa-fw"></i>Ramah Anak</div>
+                </div>
+                <div class="underline"></div>
+                <div class="list-btn">
+                    <form action="https://www.oyorooms.com/h/83389/?utm_source=GMB_ID&utm_medium=Organic&utm_campaign=ID_LBK036&latitude=-8.7170829&longitude=116.288403&locale=id" target="_blank">
+                        <button class="button"><i class="fas fa-globe-americas fa-fw"></i> Website</button>
+                    </form>
+                    <form action="https://goo.gl/maps/W8bMRC4bWTfGmivD7" target="_blank">
+                        <button class="button"><i class="fas fa-map-marker-alt fa-fw"></i> Lokasi di Google Maps</button>
+                    </form>
+                </div>
+            </div>
+            <div class="column">
+                <div class="kategori">Wisma</div>
+                <div class="judul-alamat-nohp">
+                    <h3>WISMA DHANA</h3>
+                    <p class="alamat">Jl. Pahlawan No.10, Praya, Kabupaten Lombok Tengah, Nusa Tenggara Bar. 83514</p>
+                    <p>0819-1796-3839</p>
+                </div>
+                <div class="underline"></div>
+                <div class="fasilitas">
+                    <p><b>Fasilitas Populer</b></p>
+                    <div><i class="fas fa-wifi fa-fw"></i>WIFI Gratis</div>
+                    <div><i class="fas fa-baby-carriage fa-fw"></i>Ramah Anak</div>
+                </div>
+                <div class="underline"></div>
+                <div class="list-btn">
+                    <form action="http://wismadhana123.blogspot.com/" target="_blank">
+                        <button class="button"><i class="fas fa-globe-americas fa-fw"></i> Website</button>
+                    </form>
+                    <form action="https://goo.gl/maps/uuAzn5b5XUcrMq4o6" target="_blank">
+                        <button class="button"><i class="fas fa-map-marker-alt fa-fw"></i> Lokasi di Google Maps</button>
+                    </form>
+                </div>
+            </div>
+            <div class="column">
+                <div class="kategori">Homestay</div>
+                <div class="judul-alamat-nohp">
+                    <h3>KAWI HOMESTAY</h3>
+                    <p class="alamat">Setanggor, West Praya, Central Lombok Regency, West Nusa Tenggara 83572</p>
+                    <p>0877-8140-1586</p>
+                </div>
+                <div class="underline"></div>
+                <div class="fasilitas">
+                    <p><b>Fasilitas Populer</b></p>
+                    <div><i class="fas fa-wifi fa-fw"></i>WIFI Gratis</div>
+                    <div><i class="fas fa-baby-carriage fa-fw"></i>Ramah Anak</div>
+                </div>
+                <div class="underline"></div>
+                <div class="list-btn">
+                    <form action="https://goo.gl/maps/n1Zsv7YMyGj9ub1n8" target="_blank">
+                        <button class="button"><i class="fas fa-map-marker-alt fa-fw"></i> Lokasi di Google Maps</button>
+                    </form>
+                </div>
+            </div>
+            <div class="column">
+                <div class="kategori">Hotel</div>
+                <div class="judul-alamat-nohp">
+                    <h3>HOTEL PENGINAPAN ARTHA PRAYA LOMBOK TENGAH</h3>
+                    <p class="alamat">Jalan Pahlawan No. 1 (Depan Makam Pahlawan Rancak, Praya, Kabupaten Lombok Tengah, Nusa Tenggara Bar. 83514</p>
+                    <p>0818-542-624</p>
+                </div>
+                <div class="underline"></div>
+                <div class="fasilitas">
+                    <p><b>Fasilitas Populer</b></p>
+                    <div><i class="fas fa-wifi fa-fw"></i>WIFI</div>
+                    <div><i class="fas fa-parking fa-fw"></i>Tempat Parkir</div>
+                    <div><i class="far fa-snowflake fa-fw"></i>AC</div>
+                    <div><i class="fas fa-baby-carriage fa-fw"></i>Ramah Anak</div>
+                </div>
+                <div class="underline"></div>
+                <div class="list-btn">
+                    <form action="https://goo.gl/maps/M1smvwBKAwBFE8m47" target="_blank">
+                        <button class="button"><i class="fas fa-map-marker-alt fa-fw"></i> Lokasi di Google Maps</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+        <div class="column">
+            <div class="kategori">Hotel</div>
+            <div class="judul-alamat-nohp">
+                <h3>HOTEL QUEEN</h3>
+                <p class="alamat">Jl. Pahlawan, Praya, Kabupaten Lombok Tengah, Nusa Tenggara Bar. 83511</p>
+                <p>0819-1800-5152</p>
+            </div>
+            <div class="underline"></div>
+            <div class="fasilitas">
+                <p><b>Fasilitas Populer</b></p>
+                <div><i class="fas fa-wifi fa-fw"></i>WIFI Gratis</div>
+                <div><i class="fas fa-parking fa-fw"></i>Tempat Parkir</div>
+                <div><i class="fas fa-baby-carriage fa-fw"></i>Ramah Anak</div>
+            </div>
+            <div class="underline"></div>
+            <div class="list-btn">
+                <form action="https://goo.gl/maps/8UDyk56ajH9ySCuo8" target="_blank">
+                    <button class="button"><i class="fas fa-map-marker-alt fa-fw"></i> Lokasi di Google Maps</button>
+                </form>
+            </div>
+        </div>
+        <div class="column">
+            <div class="kategori">Homestay</div>
+            <div class="judul-alamat-nohp">
+                <h3>ALAN'S HOMESTAY</h3>
+                <p class="alamat">Penujak, West Praya, Central Lombok Regency, West Nusa Tenggara 83572</p>
+                <p>0813-3707-6906</p>
+            </div>
+            <div class="underline"></div>
+            <div class="fasilitas">
+                <p><b>Fasilitas Populer</b></p>
+                <div><i class="fas fa-wifi fa-fw"></i>WIFI Gratis</div>
+                <div><i class="fas fa-baby-carriage fa-fw"></i>Ramah Anak</div>
+            </div>
+            <div class="underline"></div>
+            <div class="list-btn">
+                <form action="https://goo.gl/maps/eNSUEMD5m84iSR6g9" target="_blank">
+                    <button class="button"><i class="fas fa-map-marker-alt fa-fw"></i> Lokasi di Google Maps</button>
+                </form>
+            </div>
+        </div>
+        <div class="column">
+            <div class="kategori">Hotel</div>
+            <div class="judul-alamat-nohp">
+                <h3>GRAND ROYAL B.I.L LOMBOK</h3>
+                <p class="alamat">Jalan Bypass Bandara Internasional Lombok, Batujai, Praya Bar., Batujai, Praya Bar., Kabupaten Lombok Tengah, Nusa Tenggara Bar. 83516</p>
+                <p>0851-0089-7509</p>
+            </div>
+            <div class="underline"></div>
+            <div class="fasilitas">
+                <p><b>Fasilitas Populer</b></p>
+                <div><i class="fas fa-wifi fa-fw"></i>WIFI Gratis</div>
+                <div><i class="fas fa-swimmer fa-fw"></i>Kolam Renang</div>
+                <div><i class="fas fa-coffee fa-fw"></i>Makan Pagi</div>
+                <div><i class="fas fa-parking fa-fw"></i>Tempat Parkir</div>
+                <div><i class="far fa-snowflake fa-fw"></i>AC</div>
+            </div>
+            <div class="underline"></div>
+            <div class="list-btn">
+                <form action="http://www.grandroyallombok.com/" target="_blank">
+                    <button class="button"><i class="fas fa-globe-americas fa-fw"></i> Website</button>
+                </form>
+                <form action="https://goo.gl/maps/SpgYRwfBmcUmU7g6A" target="_blank">
+                    <button class="button"><i class="fas fa-map-marker-alt fa-fw"></i> Lokasi di Google Maps</button>
+                </form>
+            </div>
+        </div>
+        <div class="column">
+            <div class="kategori">Homestay</div>
+            <div class="judul-alamat-nohp">
+                <h3>SAHABUDIN HOMESTAY</h3>
+                <p class="alamat">Setanggor, West Praya, Central Lombok Regency, West Nusa Tenggara 83572</p>
+                <p>0877-6222-5315</p>
+            </div>
+            <div class="underline"></div>
+            <div class="fasilitas">
+                <p><b>Fasilitas Populer</b></p>
+                <div><i class="fas fa-wifi fa-fw"></i>WIFI Gratis</div>
+                <div><i class="fas fa-blender fa-fw"></i>Dapur di Beberapa Ruang</div>
+            </div>
+            <div class="underline"></div>
+            <div class="list-btn">
+                <form action="https://goo.gl/maps/KPAxEdcnFHCACzLn6" target="_blank">
+                    <button class="button"><i class="fas fa-map-marker-alt fa-fw"></i> Lokasi di Google Maps</button>
+                </form>
+            </div>
+        </div>
+        <div class="column">
+            <div class="kategori">Hotel</div>
+            <div class="judul-alamat-nohp">
+                <h3>HOTEL DIENDA HAYU</h3>
+                <p class="alamat">Jl. Untung Suropati No.28, Jontlak, Praya, Kabupaten Lombok Tengah, Nusa Tenggara Bar. 83518</p>
+                <p>(0370) 653203</p>
+            </div>
+            <div class="underline"></div>
+            <div class="fasilitas">
+                <p><b>Fasilitas Populer</b></p>
+                <div><i class="fas fa-wifi fa-fw"></i>WIFI Gratis</div>
+            </div>
+            <div class="underline"></div>
+            <div class="list-btn">
+                <form action="https://goo.gl/maps/4DLmVBAuvpQjmgvD7" target="_blank">
+                    <button class="button"><i class="fas fa-map-marker-alt fa-fw"></i> Lokasi di Google Maps</button>
+                </form>
+            </div>
+        </div>
+        <div class="column">
+            <div class="kategori">Hotel</div>
+            <div class="judul-alamat-nohp">
+                <h3>DMAX HOTEL & CONVENTION LOMBOK</h3>
+                <p class="alamat">Jl. Raya Bypass BIL Km.2 Praya, Lombok Tengah, Penujak, Praya Bar., Kabupaten Lombok Tengah, Nusa Tenggara Bar. 83572</p>
+                <p>(0370) 6158888</p>
+            </div>
+            <div class="underline"></div>
+            <div class="fasilitas">
+                <p><b>Fasilitas Populer</b></p>
+                <div><i class="fas fa-wifi fa-fw"></i>WIFI Gratis</div>
+                <div><i class="fas fa-swimmer fa-fw"></i>Kolam Renang</div>
+                <div><i class="fas fa-coffee fa-fw"></i>Makan Pagi</div>
+                <div><i class="fas fa-parking fa-fw"></i>Tempat Parkir</div>
+                <div><i class="far fa-snowflake fa-fw"></i>AC</div>
+            </div>
+            <div class="underline"></div>
+            <div class="list-btn">
+                <form action="http://www.dmax-dhotel.com/" target="_blank">
+                    <button class="button"><i class="fas fa-globe-americas fa-fw"></i> Website</button>
+                </form>
+                <form action="https://goo.gl/maps/SrpreVq7Q9UwTCwq9" target="_blank">
+                    <button class="button"><i class="fas fa-map-marker-alt fa-fw"></i> Lokasi di Google Maps</button>
+                </form>
+            </div>
+        </div>
+        <div class="column">
+            <div class="kategori">Homestay</div>
+            <div class="judul-alamat-nohp">
+                <h3>SETANGGOR HOMESTAY</h3>
+                <p class="alamat">Unnamed Road, Setanggor, Praya Bar., Kabupaten Lombok Tengah, Nusa Tenggara Bar. 83572</p>
+                <p>0877-5903-5763</p>
+            </div>
+            <div class="underline"></div>
+            <div class="fasilitas">
+                <p><b>Fasilitas Populer</b></p>
+                <div><i class="fas fa-wifi fa-fw"></i>WIFI Gratis</div>
+            </div>
+            <div class="underline"></div>
+            <div class="list-btn">
+                <form action="https://goo.gl/maps/AD3W6j4x2h7dnbyGA" target="_blank">
+                    <button class="button"><i class="fas fa-map-marker-alt fa-fw"></i> Lokasi di Google Maps</button>
+                </form>
+            </div>
+        </div>
+        <div class="column">
+            <div class="kategori">Villa</div>
+            <div class="judul-alamat-nohp">
+                <h3>THE ANORA</h3>
+                <p class="alamat">Batujai, West Praya, Central Lombok Regency, West Nusa Tenggara 83572</p>
+                <p>0812-4931-8888</p>
+            </div>
+            <div class="underline"></div>
+            <div class="fasilitas">
+                <p><b>Fasilitas Populer</b></p>
+                <div><i class="fas fa-wifi fa-fw"></i>WIFI Gratis</div>
+                <div><i class="fas fa-parking fa-fw"></i>Tempat Parkir</div>
+                <div><i class="far fa-snowflake fa-fw"></i>AC</div>
+                <div><i class="fas fa-baby-carriage fa-fw"></i>Ramah Anak</div>
+            </div>
+            <div class="underline"></div>
+            <div class="list-btn">
+                <form action="https://goo.gl/maps/yJkmuiq1FWJW1D948" target="_blank">
+                    <button class="button"><i class="fas fa-map-marker-alt fa-fw"></i> Lokasi di Google Maps</button>
+                </form>
+            </div>
+        </div>
+        <div class="column">
+            <div class="kategori">Homestay</div>
+            <div class="judul-alamat-nohp">
+                <h3>FAMILY HOMESTAY LOMBOK</h3>
+                <p class="alamat">Jl. Raya Setanggor-Kabol, Setanggor, Praya Bar., Kabupaten Lombok Tengah, Nusa Tenggara Bar. 83572</p>
+                <p>0819-3670-8807</p>
+            </div>
+            <div class="underline"></div>
+            <div class="fasilitas">
+                <p><b>Fasilitas Populer</b></p>
+                <div><i class="fas fa-wifi fa-fw"></i>WIFI Gratis</div>
+                <div><i class="fas fa-parking fa-fw"></i>Tempat Parkir</div>
+                <div><i class="fas fa-shuttle-van fa-fw"></i>Airport shuttle</div>
+                <div><i class="fas fa-paw fa-fw"></i>Hewan Peliharaan Diperbolehkan</div>
+                <div><i class="fas fa-blender fa-fw"></i>Dapur di Beberapa Ruang</div>
+                <div><i class="fas fa-check fa-fw"></i>Layanan Laundry</div>
+            </div>
+            <div class="underline"></div>
+            <div class="list-btn">
+                <form action="https://familyhomestaylombok.business.site/" target="_blank">
+                    <button class="button"><i class="fas fa-globe-americas fa-fw"></i> Website</button>
+                </form>
+                <form action="https://goo.gl/maps/uUAc7j3VNECuh1fR9" target="_blank">
+                    <button class="button"><i class="fas fa-map-marker-alt fa-fw"></i> Lokasi di Google Maps</button>
+                </form>
+            </div>
+        </div>
+        <div class="column">
+            <div class="kategori">Hotel</div>
+            <div class="judul-alamat-nohp">
+                <h3>BUKIT SENGGIGI HOTEL</h3>
+                <p class="alamat">JL. Raya Senggigi, Km 13 Lombok, Muncan, Kopang, Central Lombok Regency, West Nusa Tenggara 83553</p>
+                <p>-</p>
+            </div>
+            <div class="underline"></div>
+            <div class="fasilitas">
+                <p><b>Fasilitas Populer</b></p>
+                <div><i class="fas fa-parking fa-fw"></i>Tempat Parkir</div>
+                <div><i class="fas fa-baby-carriage fa-fw"></i>Ramah Anak</div>
+            </div>
+            <div class="underline"></div>
+            <div class="list-btn">
+                <form action="https://goo.gl/maps/NhFATX9wZZxVG15w8" target="_blank">
+                    <button class="button"><i class="fas fa-map-marker-alt fa-fw"></i> Lokasi di Google Maps</button>
+                </form>
+            </div>
+        </div>
+        <div class="column">
+            <div class="kategori">Bungalow</div>
+            <div class="judul-alamat-nohp">
+                <h3>SECRET GARDEN BUNGALOWS</h3>
+                <p class="alamat">Jl. Raya Mantang No.1000, Pemepek, Pringgarata, Kabupaten Lombok Tengah, Nusa Tenggara Bar. 83562</p>
+                <p>0823-3924-4321</p>
+            </div>
+            <div class="underline"></div>
+            <div class="fasilitas">
+                <p><b>Fasilitas Populer</b></p>
+                <div>Tidak ditemukan</div>
+            </div>
+            <div class="underline"></div>
+            <div class="list-btn">
+                <form action="https://goo.gl/maps/YmM9tAupnXoboWjP9" target="_blank">
+                    <button class="button"><i class="fas fa-map-marker-alt fa-fw"></i> Lokasi di Google Maps</button>
+                </form>
+            </div>
+        </div>
+        <div class="column">
+            <div class="kategori">Hotel</div>
+            <div class="judul-alamat-nohp">
+                <h3>THE BORN</h3>
+                <p class="alamat">Jln. Raya Kuta, Kuta, Pujut, Muncan, Batukliang, Central Lombok Regency, West Nusa Tenggara 83573</p>
+                <p>0878-5964-2482</p>
+            </div>
+            <div class="underline"></div>
+            <div class="fasilitas">
+                <p><b>Fasilitas Populer</b></p>
+                <div><i class="fas fa-wifi fa-fw"></i>WIFI Gratis</div>
+            </div>
+            <div class="underline"></div>
+            <div class="list-btn">
+                <form action="https://goo.gl/maps/jRDLd12oFoQ8vRiy9" target="_blank">
+                    <button class="button"><i class="fas fa-map-marker-alt fa-fw"></i> Lokasi di Google Maps</button>
+                </form>
+            </div>
+        </div>
+    </main>
+    <footer class="footer">
+        <div class="bottom-nav-and-logo">
+            <div class="bottom-nav">
+                <div class="bottom-nav-member">
+                    <div class="member">Peta</div>
+                    <div class="submember"><a href="peta.html">Peta Lokasi</a></div>
+                    <div class="submember"><a href="peta.html">Peta Infografis</a></div>
+                </div>
+                <div class="bottom-nav-member">
+                    <div class="member">Jelajah</div>
+                    <div class="submember"><a href="destinasi-wisata.html">Destinasi Wisata</a></div>
+                    <div class="submember"><a href="penginapan-terdekat.html">Penginapan</a></div>
+                    <div class="submember"><a href="produk-lokal.html">Produk Lokal</a></div>
+                </div>
+                <div class="bottom-nav-member">
+                    <div class="member">Profil KKN</div>
+                    <div class="submember"><a href="profil-kkn.html">Filosofi Logo</a></div>
+                    <div class="submember"><a href="profil-kkn.html">Anggota Tim</a></div>
+                    <div class="submember"><a href="profil-kkn.html">Program Kerja</a></div>
+                </div>
+                <div class="bottom-nav-member">
+                    <div class="member">Kontak Kami</div>
+                    <div class="submember"><a href="kontak.html">Admin Bonjeruk</a></div>
+                    <div class="submember"><a href="kontak.html">Admin Sukarara</a></div>
+                    <div class="submember"><a href="kontak.html">Admin KKN Hikayat Jonggat</a></div>
+                </div>
+            </div>
+            <div class="text-logo">
+                <div class="simple-text">Didukung dan Diselenggarakan Oleh</div>
+                <div class="list-logo">
+                    <a href="https://www.ugm.ac.id/"><img src="assets/Logo UGM.png" alt="Logo UGM" height="90px"></a>
+                    <a href="https://kkn.ugm.ac.id/"><img src="assets/Logo KKN PPM.png" alt="Logo KKN PPPM" height="90px"></a>
+                    <a href="https://lomboktengahkab.go.id/"><img src="assets/Logo Lombok Tengah.png" alt="Logo Lombok Tengah" height="90px"></a>
+                    <a href="#"><img src="assets/Logo KKN.png" alt="Logo KKN" height="90px"></a>
+                </div>
+            </div>
+        </div>
+        <div class="copyright">&#169 Tim KKN-PPM UGM Kecamatan Jonggat 2021</div>
+    </footer>
+    <script>
+        function barFunction() {
+            document.getElementById("menu-bar").classList.toggle("change");
+            document.getElementById("navbar").classList.toggle("show-navbar");
+        }
+    </script>
+</body>
+
+</html>

@@ -1,0 +1,240 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Homepage - Hikayat Jonggat</title>
+    <link rel="shortcut icon" href="assets/favicon.ico" type="image/x-icon">
+    <link rel="stylesheet" href="assets/style-homepage.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+    <script src='https://kit.fontawesome.com/b247404256.js' crossorigin='anonymous'></script>
+</head>
+
+<body>
+    <header>
+        <div class="logo">
+            <a href="#beranda"><img src="assets/Logo KKN.png" alt="Logo KKN Hikayat Jonggat" width="48px"></a>
+        </div>
+        <nav id="navbar">
+            <ul class="navbar">
+                <li><a class="active-navbar" href="homepage.html">Beranda</a></li>
+                <li><a href="peta.html">Peta</a></li>
+                <li class="dropdown">
+                    <a href="#">Jelajah <i class="fas fa-angle-down" style="font-size:17px; font-weight:600;"></i></a>
+                    <ul class="dropdown-content">
+                        <li><a href="destinasi-wisata.html">Destinasi Wisata</a></li>
+                        <li><a href="penginapan-terdekat.html">Penginapan Terdekat</a></li>
+                        <li><a href="produk-lokal.html">Produk Lokal</a></li>
+                    </ul>
+                </li>
+                <li><a href="profil-kkn.html">Profil KKN</a></li>
+                <li><a href="kontak.html">Kontak</a></li>
+            </ul>
+        </nav>
+        <div class="menu-bar" id="menu-bar" onclick="barFunction()">
+            <div class="bar"></div>
+            <div class="bar"></div>
+            <div class="bar"></div>
+        </div>
+    </header>
+    <main class="content">
+        <div class="title1-img">
+            <div class="title1">
+                <h1>Desa Wisata</h1>
+                <h1 style="margin-top: -7px; margin-bottom: -7px;">Bonjeruk & Sukarara</h1>
+                <p>Kenali pesona keunikannya!</p>
+            </div>
+            <div class="img">
+                <img src="assets/COVER FRONT.png" alt="">
+            </div>
+        </div>
+        <div class="profil-desa-wisata" style="margin-top: 100px;">
+            <div class="title">
+                <h2>Profil Desa Wisata</h2>
+                <div class="underline"></div>
+            </div>
+            <div class="row1">
+                <div class="column1">
+                    <a href="#deskripsi-desa-bonjeruk">
+                        <div class="content-body1">
+                            <img src="assets/1628220233126.jpg" alt="Desa Wisata Bonjeruk">
+                            <h3 style="text-align: center;">Desa Wisata Bonjeruk</h3>
+                            <p style="text-align: justify;">Lorem ipsum dolor sit amet consectetur adipisicing elit. Deleniti quisquam ipsum.</p>
+                        </div>
+                    </a>
+                </div>
+                <div class="column1">
+                    <a href="#deskripsi-desa-sukarara">
+                        <div class="content-body1">
+                            <img src="assets/festival-begawe-jelo-nyensek-2019.JPG" alt="Festival Begawe Jelo Nyensek IV Tahun 2019">
+                            <h3 style="text-align: center;">Desa Wisata Sukarara</h3>
+                            <p style="text-align: justify;">Lorem ipsum dolor sit amet consectetur adipisicing elit. Deleniti quisquam ipsum.</p>
+                        </div>
+                    </a>
+                </div>
+            </div>
+        </div>
+        <div class="destinasi-wisata" style="margin-top: 100px;">
+            <h2 class="title2">Berbagai <br>
+                <span>Destinasi Wisata</span>
+            </h2>
+            <p style="text-align: center; margin-top: 30px; color: #222; margin-left: 5%; margin-right: 5%;"><i>Pilihan destinasi wisata <b>terpopuler</b></i></p>
+            <div class="row2">
+                <div class="column2">
+                    <a href="#">
+                        <div class="content-body2">
+                            <img src="assets/kantin-21.jpg" alt="Kantin 21 di Batujering">
+                            <h3 style="text-align: left;">Kantin 21</h3>
+                            <p style="text-align: justify; color:  #CB4745; font-weight: 600;">Wisata Buatan</p>
+                            <p style="text-align: justify;">Bonjeruk</p>
+                        </div>
+                    </a>
+                </div>
+                <div class="column2">
+                    <a href="#">
+                        <div class="content-body2">
+                            <img src="assets/pasar-bambu.jpg" alt="Pasar Bambu di Bat Pekan Bat">
+                            <h3 style="text-align: left;">Pasar Bambu</h3>
+                            <p style="text-align: justify; color: #CB4745; font-weight: 600;">Wisata Buatan</p>
+                            <p style="text-align: justify;">Bonjeruk</p>
+                        </div>
+                    </a>
+                </div>
+                <div class="column2">
+                    <a href="#">
+                        <div class="content-body2">
+                            <img src="assets/desa-wisata-bonjeruk.jpg" alt="Tebing Purba di Loang Tuna">
+                            <h3 style="text-align: left;">Tebing Purba</h3>
+                            <p style="text-align: justify; color: #CB4745; font-weight: 600;">Wisata Alam</p>
+                            <p style="text-align: justify;">Bonjeruk</p>
+                        </div>
+                    </a>
+                </div>
+                <div class="column2">
+                    <a href="#">
+                        <div class="content-body2">
+                            <img src="assets/desa-bonjeruk.jpg" alt="Ecotourism di Presak">
+                            <h3 style="text-align: left;">Ecotourism</h3>
+                            <p style="text-align: justify; color: #CB4745; font-weight: 600;">Wisata Alam</p>
+                            <p style="text-align: justify;">Bonjeruk</p>
+                        </div>
+                    </a>
+                </div>
+            </div><br>
+            <div class="other">
+                <a href="destinasi-wisata.html">Tampilkan lainnya  <i class="fas fa-angle-right"></i></a>
+            </div>
+        </div>
+        <div class="produk-lokal" style="margin-top: 100px;">
+            <h2 class="title3">Produk Lokal</h2>
+            <p style="text-align: center; margin-top: 30px; margin-left: 5%; margin-right: 5%;"><i>Pilihan produk lokal <b>terpopuler</b></i></p>
+            <div class="row2">
+                <div class="column2">
+                    <a href="assets/style-tenun-songket-sukarara.css">
+                        <div class="content-body2">
+                            <img src="assets/kain-tenun-20.jpg" alt="Kantin 21">
+                            <h3 style="text-align: left;">Tenun Songket</h3>
+                            <p style="text-align: justify; color: #CB4745; font-weight: 600;">Kerajinan</p>
+                            <p style="text-align: justify;">Sukarara</p>
+                        </div>
+                    </a>
+                </div>
+                <div class="column2">
+                    <a href="#">
+                        <div class="content-body2">
+                            <img src="assets/desa-bonjeruk.jpg" alt="Pasar Bambu">
+                            <h3 style="text-align: left;">Pasar Bambu</h3>
+                            <p style="text-align: justify; color: #CB4745; font-weight: 600;">Wisata Buatan</p>
+                            <p style="text-align: justify;">Bonjeruk</p>
+                        </div>
+                    </a>
+                </div>
+                <div class="column2">
+                    <a href="#">
+                        <div class="content-body2">
+                            <img src="assets/desa-sukarara.jpg" alt="Desa Bonjeruk">
+                            <h3 style="text-align: left;">Pasar Bambu</h3>
+                            <p style="text-align: justify; color: #CB4745; font-weight: 600;">Wisata Buatan</p>
+                            <p style="text-align: justify;">Bonjeruk</p>
+                        </div>
+                    </a>
+                </div>
+                <div class="column2">
+                    <a href="#">
+                        <div class="content-body2">
+                            <img src="assets/desa-bonjeruk.jpg" alt="Desa Bonjeruk">
+                            <h3 style="text-align: left;">Pasar Bambu</h3>
+                            <p style="text-align: justify; color: #CB4745; font-weight: 600;">Wisata Buatan</p>
+                            <p style="text-align: justify;">Bonjeruk</p>
+                        </div>
+                    </a>
+                </div>
+            </div>
+            <div class="other">
+                <a href="produk-lokal.html">Tampilkan lainnya  <i class="fas fa-angle-right"></i></a>
+            </div>
+        </div>
+        <div class="hikayat-jonggat" style="margin-top: 100px; margin-bottom: 100px;">
+            <a href="profil-kkn.html">
+                <div class="box">
+                    <div class="subtitle">
+                        <p>Kenal lebih dekat dengan</p>
+                        <h2 style="margin-top: 0;">KKN Hikayat Jonggat</h2>
+                    </div>
+                    <img class="logo2" src="assets/Logo KKN.png" alt="Logo KKN Hikayat Jonggat">
+                </div>
+            </a>
+        </div>
+    </main>
+    <footer class="footer">
+        <div class="bottom-nav-and-logo">
+            <div class="bottom-nav">
+                <div class="bottom-nav-member">
+                    <div class="member">Peta</div>
+                    <div class="submember"><a href="peta.html">Peta Lokasi</a></div>
+                    <div class="submember"><a href="peta.html">Peta Infografis</a></div>
+                </div>
+                <div class="bottom-nav-member">
+                    <div class="member">Jelajah</div>
+                    <div class="submember"><a href="destinasi-wisata.html">Destinasi Wisata</a></div>
+                    <div class="submember"><a href="penginapan-terdekat.html">Penginapan</a></div>
+                    <div class="submember"><a href="produk-lokal.html">Produk Lokal</a></div>
+                </div>
+                <div class="bottom-nav-member">
+                    <div class="member">Profil KKN</div>
+                    <div class="submember"><a href="profil-kkn.html">Filosofi Logo</a></div>
+                    <div class="submember"><a href="profil-kkn.html">Anggota Tim</a></div>
+                    <div class="submember"><a href="profil-kkn.html">Program Kerja</a></div>
+                </div>
+                <div class="bottom-nav-member">
+                    <div class="member">Kontak Kami</div>
+                    <div class="submember"><a href="kontak.html">Admin Bonjeruk</a></div>
+                    <div class="submember"><a href="kontak.html">Admin Sukarara</a></div>
+                    <div class="submember"><a href="kontak.html">Admin KKN Hikayat Jonggat</a></div>
+                </div>
+            </div>
+            <div class="text-logo">
+                <div class="simple-text">Didukung dan Diselenggarakan Oleh</div>
+                <div class="list-logo">
+                    <a href="https://www.ugm.ac.id/"><img src="assets/Logo UGM.png" alt="Logo UGM" height="90px"></a>
+                    <a href="https://kkn.ugm.ac.id/"><img src="assets/Logo KKN PPM.png" alt="Logo KKN PPPM" height="90px"></a>
+                    <a href="https://lomboktengahkab.go.id/"><img src="assets/Logo Lombok Tengah.png" alt="Logo Lombok Tengah" height="90px"></a>
+                    <a href="#"><img src="assets/Logo KKN.png" alt="Logo KKN" height="90px"></a>
+                </div>
+            </div>
+        </div>
+        <div class="copyright">&#169 Tim KKN-PPM UGM Kecamatan Jonggat 2021</div>
+    </footer>
+    <script>
+        function barFunction() {
+            document.getElementById("menu-bar").classList.toggle("change");
+            document.getElementById("navbar").classList.toggle("show-navbar");
+        }
+    </script>
+</body>
+
+</html>
